@@ -1,0 +1,138 @@
+:root {
+     --vermelha:#E50914; 
+     /* Dfinir as cores e parametros principais usados no site, fica mais facil buscar essas cores ja
+     as definindo no começo do programa. O css3 permite a utilizção de variaveis, como essas var {red} */
+     
+    --preta:#141414;
+}
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    /* box-sizing é o limite da caixa. Nenhum elemento vai ultrapassar o tamnaho da caixa 
+    Aqui *{} definimos o padrao do site para qualquer navegador, zerando coisas preestabelecidas*/
+    
+}
+/* Elemntos bases do CSS */
+
+body{
+
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    /* Font family é a formatação da fonte */
+    color: white;
+    /* Uma vez alterado qualquer elemento dentro do body, tudo dentro dele esta suscetivel a esta alteração */
+    
+}
+
+header .container {
+    display: flex;
+    /* Flex box é o alinhamento dos elementos na tela */
+    align-items: center;
+    flex-direction: row;
+    /* row linha, é propriedade impressa nas flex-boxes, mesmo que nao puxe a função ela vem pre estabelecida */
+    justify-content: space-between; 
+    /* justify content alinha os itens em horizontal "betwen" define os espaços entre
+    os itens, align itens alinha na vertical */
+
+}
+
+header .logo{
+    margin-left: 7px;
+    /* define o espaçamento entre o item e a margem do body */
+    color: var(--vermelha);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 38px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px ;
+}
+
+header nav a:hover{
+    color: #FFF;
+/* hover aplica a mesma função de mouseover ou mouseout, quando o mouse passa por cima ele aplica a função */
+}
+
+/* filme principal */
+
+.Filme-principal{
+    font-size: 18px;
+    background: url('/imgs/Fundo\ Principal.jpg');
+
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    /*  justify-contente sempre seguira a direção do flex-direction: */
+    justify-content: center;
+    align-items: flex-start;
+    /* align-itens e justify content sempre se invertem */
+
+}
+
+.Filme-principal .Descricao{
+    margin-top: 2%;
+    margin-bottom: 20px ;
+}
+
+.Titulo {
+    margin-top: 10%;
+    font-size: 40px;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.botao{
+    background-color: rgba(0, 0, 0, 50%);
+    border: none;
+    color: white;
+
+    padding: 10px 20px;
+    /* Padding quando eu coloco apenas um valor, ele joga nas 4 margens, se eu jogo dois valores
+    o primeiro valor é para cima e baixo, e o segundo para as laterais */
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+    /* transitions serve pra dar animação e efeito */
+}
+
+.botao:hover{
+    /* hover = mouseover */
+    background-color: lightgray;
+    color: black;
+}
+
+.botao i{
+    margin-right:  8px;
+}
+
+.container{
+    margin-left: 15px;
+    /* todos os elementos com a classe container sao alterados */
+}
+
+.Filme-principal .container {
+    width: 68%;
+    /*  altera apenas o container contido dentro da calsse "filme principal */
+}
+
+/* #wrapper = envolopar 
+ Classe wrapper envelopa tudo que esta dentro do seu corpo, é como se fosse a roupa,
+ela guarda varios outros elementos. É mais facil manipular os elementos dentro dela, apenas manipulando 
+ela mesma, entao todos os elementos dentro dela, herdam a mesma var atibuida a ele(warp) */
+
+.box-filmes{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 7px;
+}
