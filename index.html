@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/main.css">
+<!-- owl css-->
+<link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+<link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
+<!--Respansividade-->
+<link rel="stylesheet" href="style/responsive.css">
+
+
+    <title>NETFLIX CLONE</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h2 class="logo">NETFLIX</h2> 
+            <!--h2 é o segundo titulo da pagina, maior destaque  -->
+            <nav>
+                <a href="#">Inicio</a>
+                <a href="#">Séries</a>
+                <a href="#">Filmes</a>
+                <a href="#">Documentarios</a>
+            </nav>
+<!-- Nav é lieramente o menu de navegação -->
+
+        </div>
+    </header>
+    
+    <main>
+        <!-- Main apenas com objetivos semantico, apenas pra afirmar que seja o principal -->
+        <div class="Filme-principal">
+            <!-- classes wrapper servem para encaixar todos elementos dentro, é a calsse principal -->
+            <div class="container">
+                <h3 class="Titulo">Matrix: Revolutions</h3>
+                <!-- Tag P de paragrafo -->
+                <p class="Descricao">Após enfrentar os sentinelas no mundo real, Neo, a maior esperança da humanidade, está preso entre a Matrix e a realidade. 
+                   As coisas pioram quando o poderoso programa de computador, Agente Smith, aparece na forma humana. </p>
+            </div>
+            <div class="botoes">
+                <button role="button" class="botao">
+                    <i class="fas fa-play"></i>
+                    <!-- role identifica a função do botão independente de onde ele esteja renderizando mobile/pad/pc -->
+                    ASSISTIR AGORA
+                </button>
+                <button role="button" class="botao">
+                    <i class="fas fa-info-circle"></i>
+                    INFO
+                </button>
+            </div>
+        </div>
+        
+    </main>
+
+    <div class="carrosel-filmes">
+       <div class="owl-carousel owl-theme">
+           <div class="item">
+               <img class="box-filmes" src="/imgs/MINI1.jpg" alt="">
+           </div>
+           <div class="item">
+            <img class="box-filmes" src="/imgs/MINI2.jpg" alt="">
+        </div>
+        <div class="item">
+            <img class="box-filmes" src="/imgs/MINI3.jpg" alt="">
+        </div>
+        <div class="item">
+            <img class="box-filmes" src="/imgs/MINI4.jpg" alt="">
+        </div>
+        <div class="item">
+            <img class="box-filmes" src="/imgs/MINI5.jpg" alt="">
+        </div>
+        <div class="item">
+            <img class="box-filmes" src="/imgs/MINI6.jpg" alt="">
+        </div>
+        <div class="item">
+            <img class="box-filmes" src="/imgs/MINI7.jpg" alt="">
+        </div>
+        <div class="item">
+            <img class="box-filmes" src="/imgs/MINI8.jpg" alt="">
+        </div>
+        <div class="item">
+            <img class="box-filmes" src="/imgs/MINI9.jpg" alt="">
+        </div>
+        <div class="item">
+            <img class="box-filmes" src="/imgs/MINI10.jpg" alt="">
+        </div>
+        
+       </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/88c71f052e.js" crossorigin="anonymous"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="/js/owl/setup.js" ></script>
+
+    <!-- link externo 
+    ATENÇÃO, ARQUIVO JS DEVE SEMPRE SER O ULTIMO A SER CARREGADO NA PAGINA, POR ISSO
+LINKAR SEMPRE OPOR ULTIMO-->
+
+<!-- $ é sempre referencia ao JQUERY-->
+</body>
+
+</html>
